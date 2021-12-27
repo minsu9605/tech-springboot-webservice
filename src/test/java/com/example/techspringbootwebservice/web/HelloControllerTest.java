@@ -25,7 +25,6 @@ public class HelloControllerTest {
         mvc.perform(get("/hello"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(hello));
-
     }
 
     @Test
@@ -39,6 +38,5 @@ public class HelloControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.name",is(name)))
                 .andExpect(jsonPath("$.amount",is(amount)));
-
     }
 }

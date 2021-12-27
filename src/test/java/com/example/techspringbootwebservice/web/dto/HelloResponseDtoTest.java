@@ -6,6 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
 
+    //기능 테스트 서비스
     @Test
     public void 롬복_기능_테스트(){
         //given
